@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="/js/import.js" charset="utf-8"></script>
+
+  <head>
+    <h1>Job processing portal</h1>
+  </head>
+  <body>
+    <form onSubmit="handleFileUpload()">
+      <input type='text' placeholder='Email address' onChange="handleEmailChange(event)"/>
+      <br></br>
+      <input id='input' type='file' onChange='handleFileChange(event)' multiple/>
+      <br></br>
+      <input type='submit'/>
+    </form>
+  </body>
+
+</html>
