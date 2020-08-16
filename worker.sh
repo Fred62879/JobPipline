@@ -5,6 +5,7 @@ cthread=$2
 
 echo $cthread running on $$
 
+
 cd $cthread
 while :
 do
