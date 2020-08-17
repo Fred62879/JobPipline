@@ -17,6 +17,7 @@ const handleFileChange = event => {
 const sendFile = (file, i) => {
     let formData = new FormData();
     formData.append('myFile', file, emailaddr + '^' + file.name + '^');
+    console.log(formData);
     fetch('/saveFile', {
         method: 'POST',
         body: formData
@@ -36,4 +37,5 @@ const handleFileUpload = () => {
     for (let i = 0; i < allFiles.length; i++) {
         sendFile(allFiles[i], i);
     }
+    alert("File uploaded!");
 }

@@ -19,8 +19,6 @@ app.post('/saveFile', (req, res) => {
     const file = req.files.myFile;
     const fileName = file.name
     const path = __dirname + '/../pending/' + fileName + uid();
-    // console.log(fileName);
-    // console.log(path);
     file.mv(path, (error) => {
         if (error) {
             console.error(error)
